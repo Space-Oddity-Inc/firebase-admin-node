@@ -811,7 +811,7 @@ class HttpRequestConfigImpl implements HttpRequestConfig {
 
 export class AuthorizedHttpClient extends HttpClient {
   constructor(private readonly app: FirebaseApp) {
-    super();
+    super(null);
   }
 
   public send(request: HttpRequestConfig): Promise<HttpResponse> {
